@@ -23,7 +23,7 @@ Introduction
 2) No spaces are allowed in variable declaration.
 
 3) Except underscore (_) no special symbol are allowed in the middle of the variable declaration.
- 
+
 5) Every variable name always should exist in the left hand side of assignment operator.
 
 6) No keyword should access variable name.
@@ -34,19 +34,23 @@ Introduction
 
 #include <iostream>
 using namespace std;
-int global = 1000;
+int global = 1000; // Global variable
 
 int return_num()
 {
-    int n = 100;
+    int n = 100; // Local variable
     cout << global << endl;
     return n;
 }
 
 int main()
 {
-    int n,m,o,p,q;
-     
-   
+    int a = 10; // Local variable
+    int b = 20; // Local variable
+    int c = a + b;
+    cout << c << endl;
+    cout << global << endl;       // Printing global variable
+    cout << return_num() << endl; // calling the return_num function
+
     return 0;
 }
