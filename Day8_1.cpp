@@ -1,9 +1,7 @@
-// Switch Statements
-
 /*
 Functions in C++
 
-Introduction of Functions in C++
+Introduction of Functions
 A function is a block of code which only runs when it is called.
 
 You can pass data, known as parameters, into a function.
@@ -42,12 +40,58 @@ int sum(int a, int b) {
 Calling a Function
 from main function -> sum(a,b);
 
+Function Declaration and Definition
+
+Function Declaration
+A function declaration tells the compiler about a function's name, return type, and parameters. A function definition provides the actual body of the function.
+
+A function declaration has the following parts:
+return_type function_name( parameter list );
+
+For the above defined function sum(), following is the function declaration:
+int sum(int a, int b);
+
+Types of function
+Function with arguments and no return values
+Function with arguments and one return value
+Function with no arguments and no return values
+Function with no arguments and one return value
+Function with multiple return values
+
+
 */
 
 #include <iostream>
 using namespace std;
+void hello(string s1)
+{
+    string s1;
+       cout<<"Hello how are you ?"<<s1<<endl;
+}
+
+ 
+ // Argument vs Parameter
+
 int main()
 {
+    string s1 = "Lokesh Singh";
+    string s2 = "Mukesh";
+    string s3 = "Rakesh Singh";
+    string s10 = "Raj Singh";
 
-   return 0;
+    // Without Functon
+    //  cout<<"Hello how are you ?"<<s1<<endl;
+    //  cout<<"Hello how are you ?"<<s2<<endl;
+    //  cout<<"Hello how are you ?"<<s3<<endl;
+    //  cout<<"Hello how are you ?"<<s4<<endl;
+    //  cout<<"Hello how are you ?"<<s5<<endl;
+    //  cout<<"Hello how are you ?"<<s6<<endl;
+    //  cout<<"Hello how are you ?"<<s7<<endl;
+    //  cout<<"Hello how are you ?"<<s8<<endl;
+    //  cout<<"Hello how are you ?"<<s9<<endl;
+    //  cout<<"Hello how are you ?"<<s10<<endl;
+
+    // WithFuncton
+    hello(s1); // Argument
+    return 0;
 }
