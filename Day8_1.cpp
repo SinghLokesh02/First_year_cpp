@@ -51,6 +51,7 @@ return_type function_name( parameter list );
 For the above defined function sum(), following is the function declaration:
 int sum(int a, int b);
 
+
 Types of function
 Function with arguments and no return values
 Function with arguments and one return value
@@ -65,11 +66,16 @@ Function with multiple return values
 using namespace std;
 void hello(string s1)
 {
-    string s1;
        cout<<"Hello how are you ?"<<s1<<endl;
 }
 
- 
+ int sum(int a,int b){
+    int x = a+b;
+    int y=a*b;
+    x=y;
+    y=x;
+    int z=a/b;
+ }
  // Argument vs Parameter
 
 int main()
@@ -92,6 +98,14 @@ int main()
     //  cout<<"Hello how are you ?"<<s10<<endl;
 
     // WithFuncton
-    hello(s1); // Argument
+    // hello(s1); // Argument
+
+    int a = 10;
+    int b = 20;
+    int c = sum(a,b);
+    cout<<c<<endl;
+
+    
+
     return 0;
 }
